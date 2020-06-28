@@ -1,0 +1,26 @@
+.example-card {
+    display: flex;
+    max-width: 80%;
+    margin-top: 27px;
+    margin-left: 40px;
+    max-height: 156px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+#img{
+  order: 1;
+  flex-basis: 20%;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: 100% 100%;
+}
+#detail{
+  order: 2;
+  overflow: hidden;
+  flex-basis: 70%;
+}
+
+  
+ /*  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  } */

@@ -1,0 +1,6 @@
+<form id="form">
+    <mat-form-field id="search-parent" appearance="outline">
+        <input matInput (keydown.enter)="search()" [formControl]="searchFormControl" placeholder="Search">
+        <mat-icon (click)="search()" matSuffix>search</mat-icon>
+    </mat-form-field>
+</form>

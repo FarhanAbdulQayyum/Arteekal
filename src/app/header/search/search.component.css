@@ -1,0 +1,23 @@
+#form{
+    width: 100%;
+}
+#search-parent{
+    width: 100%;
+}
+#search-parent .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+}
+:host ::ng-deep .mat-form-field-wrapper{
+    margin: 0 !important;
+    padding: 0;
+}
+:host ::ng-deep .mat-form-field-wrapper{
+    margin: 0 !important;
+    padding: 0;
+  }
+:host ::ng-deep .mat-form-field-infix{
+    margin: 0 !important;
+    padding: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 5px solid transparent;
+}

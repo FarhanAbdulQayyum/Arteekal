@@ -1,0 +1,24 @@
+#header-parent{
+    justify-content: space-between
+}
+#start{
+    order:1
+}
+#mid{
+    order:2;
+    justify-content: center;
+    flex-basis:40%
+}
+#end{
+    order:3;
+    display: flex
+}
+#menu-button{
+    cursor: pointer;
+}
+mat-icon{
+    margin-top: 10px;
+}
+#logo{
+    font-size: 32px;
+}

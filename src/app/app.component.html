@@ -1,0 +1,10 @@
+<app-header (menuClicked)=snav.toggle()></app-header>
+<mat-sidenav-container class="example-container" >
+  <mat-sidenav #snav mode="side" [(opened)]="opened">
+    Sidenav content
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
