@@ -19,5 +19,8 @@ export class HeaderComponent implements OnInit {
   gotoMainPage() {
     this.router.navigate([''])
   }
+  add() {
+    this.router.navigate(['add'])
+  }
 
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AtricleService } from 'src/app/service/atricle.service';
 import { IArticle } from 'src/app/interface/article.interface';
 import { Router } from '@angular/router';
+import * as cloneDeep from 'lodash/cloneDeep'
 
 @Component({
   selector: 'app-main-page',
@@ -14,9 +15,8 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.articleSvc.getArticles().subscribe(articles => {
-      this.articles =[]
-      Object.assign(this.articles, articles)
-      //this.articles.forEach(arti => arti.content = arti.content.slice(1,20))
+      this.articles = cloneDeep(articles)
+      this.articles.forEach(arti => arti.content = arti.content.slice(1,200))
     })
   }
   gotoArticle(id: string){

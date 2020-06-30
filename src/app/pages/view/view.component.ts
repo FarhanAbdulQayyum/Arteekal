@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Routes, ActivatedRoute } from '@angular/router';
+import { Routes, ActivatedRoute, Router } from '@angular/router';
 import { AtricleService } from 'src/app/service/atricle.service';
 import { IArticle } from 'src/app/interface/article.interface';
 
@@ -10,11 +10,17 @@ import { IArticle } from 'src/app/interface/article.interface';
 })
 export class ViewComponent implements OnInit {
   article: IArticle
-  constructor(public activatedRoute: ActivatedRoute, public articleService: AtricleService) { }
+  id: string
+  constructor(public activatedRoute: ActivatedRoute, 
+              public articleService: AtricleService,
+              public router: Router) { }
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.paramMap.get('id')
-    this.articleService.getArticleById(id).subscribe(result => this.article = result)
+    this.id = this.activatedRoute.snapshot.paramMap.get('id')
+    this.articleService.getArticleById(this.id).subscribe(result => this.article = result)
+  }
+  gotoEditPage() {
+    this.router.navigate(['edit',this.id])
   }
 
 }

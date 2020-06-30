@@ -20,6 +20,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchCardComponent } from './components/search-card/search-card.component';
 import { ViewComponent } from './pages/view/view.component';
+import { EditComponent } from './pages/edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ViewComponent } from './pages/view/view.component';
     SearchPageComponent,
     SearchCardComponent,
     ViewComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
