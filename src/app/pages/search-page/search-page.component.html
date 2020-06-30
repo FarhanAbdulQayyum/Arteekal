@@ -1,1 +1,1 @@
-<app-search-card *ngFor="let article of articles" [article]="article"></app-search-card>
+<app-search-card *ngFor="let article of articles" [article]="article" (click)="gotoArticle(article.id)"></app-search-card>

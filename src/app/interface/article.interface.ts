@@ -11,4 +11,5 @@ export interface IArticle {
     views?: number, 
     lastupdated?: string, 
     createdAt?: string,
+    id: string,
 }

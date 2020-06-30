@@ -11,6 +11,9 @@ export class AtricleService {
   getArticles(): Observable<IArticle []> {
     return of(articles)
   }
+  getArticleById(id: string): Observable<IArticle> {
+    return of(articles.find((article => article.id === id)))
+  }
   getArticlesByQuery(query: string): Observable<IArticle []> {
     return of(articles)
   }

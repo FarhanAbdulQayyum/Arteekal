@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,16 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() menuClicked = new EventEmitter()
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
 
   menuButtonClicked() {
     this.menuClicked.emit()
+  }
+  gotoMainPage() {
+    this.router.navigate([''])
   }
 
 }

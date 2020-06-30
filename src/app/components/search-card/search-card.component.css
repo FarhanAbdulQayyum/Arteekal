@@ -6,6 +6,7 @@
     max-height: 156px;
     overflow: hidden;
     justify-content: space-between;
+    cursor: pointer;
 }
 #img{
   order: 1;

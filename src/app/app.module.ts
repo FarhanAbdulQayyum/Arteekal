@@ -19,6 +19,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchCardComponent } from './components/search-card/search-card.component';
+import { ViewComponent } from './pages/view/view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { SearchCardComponent } from './components/search-card/search-card.compon
     AvatarComponent,
     SearchPageComponent,
     SearchCardComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
